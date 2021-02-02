@@ -285,7 +285,7 @@ footer {
 .footer_bottom a {
   color: white;
 }
-.footer_bottom .conditions a:last-child::before {
+.footer_bottom .conditions span:last-child::before {
   content: '\00A9';
 }
 .footer_app {
