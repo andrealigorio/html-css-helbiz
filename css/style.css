@@ -10,6 +10,9 @@ h1 {
 h2 {
   font-size: 3em;
 }
+h3 {
+  font-size: 2.3em;
+}
 p {
   font-size: 1.3em;
 }
@@ -36,11 +39,11 @@ a:not(.menu a) {
   height: 100%;
 }
 /* Definisco e centro logo */
-.logo {
+#logo {
   position: relative;
   height: 100%;
 }
-.logo img {
+#logo img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -154,8 +157,9 @@ a:not(.menu a) {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    margin-bottom: 20px;
   }
-.smart_mobility a {
+.smart_mobility a, .section_app a {
   color: white;
 }
 .smart_mobility .smart_container {
@@ -173,6 +177,37 @@ a:not(.menu a) {
 }
 .smart_text p {
   padding: 20px 0;
+}
+/* Parte sezione app */
+.section_app {
+  color: white;
+}
+.section_app p {
+  padding: 10px 0;
+}
+.helbiz_app, .helbiz_cities {
+  height: 350px;
+}
+.helbiz_app {
+  background: linear-gradient(#415669, #253039);
+  overflow: hidden;
+  margin-right: 10px;
+}
+.helbiz_app_text, .helbiz_cities {
+  text-align: center;
+  padding-top: 20px;
+}
+.helbiz_app_text a {
+  padding: 0 10px;
+}
+.helbiz_app_image img {
+  width: 100%;
+}
+.helbiz_cities {
+  background-image: url(../img/Cities-1500.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
 }
 /* Media queries */
 @media screen and (max-width: 992px) {
@@ -222,5 +257,11 @@ a:not(.menu a) {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
     border-radius: 10px;
+  }
+  .helbiz_app {
+    margin: 0 0 20px 0;
+  }
+  .helbiz_cities {
+    margin-left: 0;
   }
 }
