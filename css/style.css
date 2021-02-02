@@ -7,7 +7,17 @@ body {
 h1 {
   font-size: 4em;
 }
+h2 {
+  font-size: 3em;
+}
 p {
+  font-size: 1.3em;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+a:not(.menu a) {
   font-size: 1.3em;
 }
 /* fine regole generali */
@@ -51,9 +61,7 @@ p {
   padding: 0 10px;
 }
 .menu ul li a {
-  text-decoration: none;
   color: black;
-  font-weight: 600;
 }
 .menu nav {
   float: right;
@@ -107,8 +115,6 @@ p {
 }
 .item a {
   color: #0007ff;
-  text-decoration: none;
-  font-size: 1.2em;
 }
 .item_image img {
   height: 400px;
@@ -118,11 +124,12 @@ p {
 .banner {
   height: 400px;
   background-image: url(../img/HelbizBanner.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
 }
 .under_banner {
-  padding-top: 130px;
+  padding: 130px 0;
   position: relative;
 }
 .text_left span {
@@ -132,13 +139,40 @@ p {
 .phone img {
   width: 400px;
   position: absolute;
-  top:-150%;
+  top:-90%;
   left: 50%;
   transform: translateX(-50%);
 }
 .text_right .float_right {
   float: right;
   text-align: left;
+}
+/* Parte Smart Mobility */
+.smart_mobility {
+    height: 400px;
+    background-image: url(../img/ScooterHelbiz-2400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+.smart_mobility a {
+  color: white;
+}
+.smart_mobility .smart_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.smart_mobility .smart_text {
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.smart_text p {
+  padding: 20px 0;
 }
 /* Media queries */
 @media screen and (max-width: 992px) {
@@ -157,6 +191,10 @@ p {
   .item .item_description {
     font-size: 1.5em;
   }
+  .smart_mobility {
+    margin-top: 400px;
+  }
+
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .jumbotron img {
@@ -164,6 +202,10 @@ p {
   }
   .phone img {
     width: 500px;
+  }
+  .smart_mobility .smart_text {
+    width: 50%;
+    left: 70%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -175,5 +217,10 @@ p {
   }
   .phone img {
     width: 600px;
+  }
+  .smart_mobility .smart_text {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 10px;
   }
 }
