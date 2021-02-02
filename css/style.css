@@ -23,6 +23,10 @@ a {
 a:not(.menu a) {
   font-size: 1.3em;
 }
+ul {
+  list-style: none;
+  display: inline-block;
+}
 /* fine regole generali */
 .header_top {
   height: 80px;
@@ -54,8 +58,6 @@ a:not(.menu a) {
   line-height: 80px;
 }
 .menu ul {
-  list-style: none;
-  display: inline-block;
   padding: 0 5px;
 }
 .menu ul li {
@@ -209,6 +211,39 @@ a:not(.menu a) {
   background-size: cover;
   margin-left: 10px;
 }
+/* Sezione social banner */
+.social_banner {
+  height: 400px;
+  background-image: url(../img/Social-Banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px 0;
+  position: relative;
+}
+
+.social_banner .social_text {
+  display: inline-block;
+  background-color: white;
+  padding: 50px 100px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social_text h3 {
+  padding-bottom: 10px;
+}
+.social_text li {
+  display: inline;
+}
+.social_text a {
+  color: black;
+  padding: 0 10px;
+}
+.social_text i {
+  font-size: 2em;
+}
 /* Media queries */
 @media screen and (max-width: 992px) {
   .header_top i {
@@ -229,7 +264,18 @@ a:not(.menu a) {
   .smart_mobility {
     margin-top: 400px;
   }
-
+  .social_banner .social_text {
+    padding: 30px 60px;
+  }
+  .social_text h3 {
+    font-size: 2em;
+  }
+  .social_text a {
+    padding: 0 5px;
+  }
+  .social_text i {
+    font-size: 1.5em;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .jumbotron img {
