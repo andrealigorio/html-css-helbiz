@@ -1,0 +1,77 @@
+/* Regole generali */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+h1 {
+  font-size: 4em;
+}
+p {
+  font-size: 1.3em;
+}
+/* fine regole generali */
+.header_top {
+  height: 80px;
+}
+.container_1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+/* Definisco e centro logo */
+.logo {
+  position: relative;
+  height: 100%;
+}
+.logo img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 10px;
+}
+/* Menu inline */
+.container.menu {
+  line-height: 80px;
+}
+.menu ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0 5px;
+}
+.menu ul li {
+  display: inline;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.menu nav {
+  float: right;
+}
+.menu ul.languages li:nth-child(2) {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+/* Parte Jumbotron */
+.jumbotron {
+  height: 500px;
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.jumbo_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.jumbo_text p {
+  padding: 20px 0;
+}
