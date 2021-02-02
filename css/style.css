@@ -114,6 +114,32 @@ p {
   height: 400px;
   padding-top: 10px;
 }
+/* Parte banner */
+.banner {
+  height: 400px;
+  background-image: url(../img/HelbizBanner.jpg);
+  background-size: cover;
+  background-position: left;
+}
+.under_banner {
+  padding-top: 130px;
+  position: relative;
+}
+.text_left span {
+  font-size: 2.5em;
+}
+
+.phone img {
+  width: 400px;
+  position: absolute;
+  top:-150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.text_right .float_right {
+  float: right;
+  text-align: left;
+}
 /* Media queries */
 @media screen and (max-width: 992px) {
   .header_top i {
@@ -136,6 +162,9 @@ p {
   .jumbotron img {
     height: 75px;
   }
+  .phone img {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 768px) {
   .jumbotron .jumbo_text h1 {
@@ -143,5 +172,8 @@ p {
   }
   .jumbotron .jumbo_text p {
     font-size: 1em;
+  }
+  .phone img {
+    width: 600px;
   }
 }
