@@ -113,10 +113,6 @@ ul {
 .item .item_description, .item a {
   display: block;
 }
-.item .item_title {
-  font-size: 3em;
-  font-weight: 600;
-}
 .item .item_description {
   font-size: 1.8em;
   font-weight: 400;
@@ -140,9 +136,6 @@ ul {
 .under_banner {
   padding: 130px 0;
   position: relative;
-}
-.text_left span {
-  font-size: 2.5em;
 }
 
 .phone img {
@@ -308,9 +301,6 @@ footer {
   .logo_md_xs img {
     height: 25px;
   }
-  .smart_mobility {
-    margin-top: 400px;
-  }
   .social_banner .social_text {
     padding: 30px 60px;
   }
@@ -337,6 +327,9 @@ footer {
   .phone img {
     width: 500px;
   }
+  .smart_mobility {
+    margin-top: 270px;
+  }
   .smart_mobility .smart_text {
     width: 50%;
     left: 70%;
@@ -350,7 +343,11 @@ footer {
     font-size: 1em;
   }
   .phone img {
-    width: 600px;
+    width: 300px;
+    top: -70%;
+  }
+  .smart_mobility {
+    margin-top: 70px;
   }
   .smart_mobility .smart_text {
     background-color: rgba(0, 0, 0, 0.4);
