@@ -2,6 +2,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
+  margin-top: 80px;
 }
 h1 {
   font-size: 4em;
@@ -12,6 +13,12 @@ p {
 /* fine regole generali */
 .header_top {
   height: 80px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 .container_1000 {
   max-width: 1000px;
@@ -65,6 +72,7 @@ p {
   position: relative;
 }
 .jumbo_text {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,4 +82,66 @@ p {
 }
 .jumbo_text p {
   padding: 20px 0;
+}
+/* Inizio main  */
+.item {
+  text-align: center;
+  background-color: #fafafa;
+  margin: 40px 20px;
+  padding: 40px;
+}
+.item span.lg-display-block {
+  display: block;
+}
+.item .item_description, .item a {
+  display: block;
+}
+.item .item_title {
+  font-size: 3em;
+  font-weight: 600;
+}
+.item .item_description {
+  font-size: 1.8em;
+  font-weight: 400;
+  padding: 20px 0;
+}
+.item a {
+  color: #0007ff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.item_image img {
+  height: 400px;
+  padding-top: 10px;
+}
+/* Media queries */
+@media screen and (max-width: 992px) {
+  .header_top i {
+    float: right;
+    font-size: 50px;
+    line-height: 80px;
+    padding-right: 20px;
+  }
+  .logo_md_xs img {
+    height: 25px;
+  }
+  .logo_md_xs span {
+    font-size: 35px;
+  }
+  .item .item_description {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .jumbotron img {
+    height: 75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .jumbotron .jumbo_text h1 {
+    font-size: 2.5em;
+  }
+  .jumbotron .jumbo_text p {
+    font-size: 1em;
+  }
 }
